@@ -1,0 +1,85 @@
+// el if se ejecutara solo si la expresion es verdedadera 
+
+//ejemplo
+
+if (true){
+    console.log("hola")
+    }
+    hola
+    
+    //en el else se ejecutara si la expresion es  falsa 
+    
+    if (false) {
+    console.log("hola")
+    } else {
+    console.log("adios")
+    }
+    adios 
+    
+    // como la expresion es falsa se ejecutara la variable que correspoda en ese caso la palabara adios 
+    
+    
+    //realize un ejercicio asignadole un valor a una variable llamada num, tambien utilizando otros operadores 
+    
+    
+    var num = 3   // el valor de la variable es 3 pero la condicion es que solo ser verdadera siempre y cuando el numero sea menor que 5
+    
+    if (num <5){
+        console.log("menor")
+    } else {
+        console.log("mayor")
+    }
+    menor 
+    
+    var num = 1 // el valor de esta variable num es 1 como no se cumplira la condicion que el valor de num no es mayor que 4, entonces se ejecutara la condicion falsa en  
+                                           //este caso  else. 
+    
+    if (num >4 ){
+        console.log("mayor")
+    } else {
+        console.log("menor")
+    }
+    menor
+    
+    
+    // realiye una practica creando piedra, papel o tijeras
+    
+    
+var puno = "piedra";   //empeye por las variables que usare piedra, papel y tijera, z como a descripcion de manera personal les puse nombres caracteristicos a esas formas 
+var mano = "papel";
+var dedos = "tijera";
+ 
+var game = function(cpu, player){    // asigne que mi variable de game tenga un funcion cuando se ejecute
+    if(cpu != player){                       // utilize operador que creara la condicion contraria a la respuesta del jugador sea cpu o player
+    if(cpu === puno && player === mano){
+
+    console.log("player gano con "+ mano)
+
+ }else if(cpu === mano && player === dedos ){                 // aca la condicion del if es que el jugador player tendra 3 formas para ganar si resulta ser contrario a eso 
+                                                                        el player perdera automaticamente ganando la cpu       
+    console.log("player gano con "+ dedos)
+
+ }else if (cpu === dedos && player === puno ){
+
+    console.log("player con con "+ puno)
+}else{
+   console.log("perdiste")       
+}
+ }else if (cpu === player){                                     //aca se creo la condicion sobre otras condisiones que si en caso contrario las anteriores no sucedan se creara 
+                                                                  un empate entre cpu y player
+    console.log( "empate") 
+}
+    };
+
+game(puno, mano)                             // para que se ejecute el juego solo se debe colocar una de las 3 variable entre las comas 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
